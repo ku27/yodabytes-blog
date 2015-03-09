@@ -16,7 +16,7 @@ name: 'Kunal Umrigar'
 author: 'Kunal Umrigar'
 author_image: "/assets/images/author.jpg"
 
-paginate:	5
+paginate: 5
 
 url: "http://yodabyt.es" # the base hostname & protocol for your site
 baseurl: ""

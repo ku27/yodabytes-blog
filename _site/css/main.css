@@ -166,16 +166,16 @@ body {
   top: 10px;
   width: 48px;
   height: 48px;
-  background-color: #000;
+  background-color: #fff;
   overflow: hidden;
   z-index: 99; }
   .logo-readium .logo {
     display: block;
     position: absolute;
-    top: 8px;
-    left: 8px;
-    width: 32px;
-    height: 32px;
+    top: 2.96296px;
+    left: 2.96296px;
+    width: 41.6px;
+    height: 41.6px;
     background-size: cover;
     background-repeat: no-repeat; }
 
