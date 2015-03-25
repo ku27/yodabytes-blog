@@ -1,11 +1,15 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-08-29 14:34:25
-categories: jekyll update
-tags: featured
+title:  "How to Blog with Jekyll and Github"
+date:   2014-12-09 14:34:25
+categories: jekyll blog
+comments: true
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
+Recently I ended my hosting contract where I hosted by wordpress blog; realized that I was wasting a lot of time maintaining wordpress than actually writing something meaningful. Had read a lot about Jekyll & Github pages and always wanted to try it out, so this was my opportunity.
+
+There are tons of posts that describe how to get started with Jekyll and Github pages, here are a few links that I found most helpful:
+http://24ways.org/2013/get-started-with-github-pages/
+
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 

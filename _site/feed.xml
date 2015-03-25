@@ -5,13 +5,16 @@
     <description>my few bytes on technology and life..</description>
     <link>http://yodabyt.es/</link>
     <atom:link href="http://yodabyt.es/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 09 Mar 2015 15:15:53 -0700</pubDate>
-    <lastBuildDate>Mon, 09 Mar 2015 15:15:53 -0700</lastBuildDate>
+    <pubDate>Wed, 25 Mar 2015 01:58:41 -0700</pubDate>
+    <lastBuildDate>Wed, 25 Mar 2015 01:58:41 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>How to Blog with Jekyll and Github</title>
+        <description>&lt;p&gt;Recently I ended my hosting contract where I hosted by wordpress blog; realized that I was wasting a lot of time maintaining wordpress than actually writing something meaningful. Had read a lot about Jekyll &amp;amp; Github pages and always wanted to try it out, so this was my opportunity.&lt;/p&gt;
+
+&lt;p&gt;There are tons of posts that describe how to get started with Jekyll and Github pages, here are a few links that I found most helpful:
+http://24ways.org/2013/get-started-with-github-pages/&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
@@ -33,16 +36,14 @@
   &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/footer&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
-        <pubDate>Fri, 29 Aug 2014 07:34:25 -0700</pubDate>
-        <link>http://yodabyt.es/jekyll/update/2014/08/29/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yodabyt.es/jekyll/update/2014/08/29/welcome-to-jekyll.html</guid>
-        
-        <category>featured</category>
+        <pubDate>Tue, 09 Dec 2014 06:34:25 -0800</pubDate>
+        <link>http://yodabyt.es/jekyll/blog/2014/12/09/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://yodabyt.es/jekyll/blog/2014/12/09/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
         
-        <category>update</category>
+        <category>blog</category>
         
       </item>
     
