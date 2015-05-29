@@ -3,6 +3,7 @@ layout: post
 title:  "Jekyll and Github Pages"
 date:   2014-12-09 14:34:25
 categories: jekyll blog
+tags: jekyll github-pages
 comments: true
 ---
 Recently ended my hosting contract when I realized I was wasting a lot of time maintaining Wordpress than actually writing something meaningful. Had read a lot about Jekyll & Github pages so I always wanted to try it out and I have to say I am really glad I did. It much simpler to post with Jekyll, you have the comfort of using your favorite editor and best part is.. wait of it.. Github pages is free!
