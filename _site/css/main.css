@@ -291,11 +291,11 @@ body {
           text-decoration: none; }
     .content article .post-excerpt {
       font-family: junction_regularregular, Linux Libertine;
-      letter-spacing: 0em;
-      font-weight: 300;
+      letter-spacing: 0.01em;
+      font-weight: 350;
       font-style: normal;
-      font-size: 18px;
-      line-height: 1.3;
+      font-size: 16px;
+      line-height: 1.8;
       color: #666665; }
     .content article .post-meta {
       font-size: 14px;
