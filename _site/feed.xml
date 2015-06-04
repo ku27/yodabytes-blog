@@ -5,8 +5,8 @@
     <description>my few bytes on technology and life..</description>
     <link>http://yodabyt.es/</link>
     <atom:link href="http://yodabyt.es/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 04 Jun 2015 12:58:19 -0700</pubDate>
-    <lastBuildDate>Thu, 04 Jun 2015 12:58:19 -0700</lastBuildDate>
+    <pubDate>Thu, 04 Jun 2015 14:52:46 -0700</pubDate>
+    <lastBuildDate>Thu, 04 Jun 2015 14:52:46 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -43,6 +43,37 @@ Output:
         <category>Netty</category>
         
         <category>ChannelPool</category>
+        
+        
+        <category>technology</category>
+        
+      </item>
+    
+      <item>
+        <title>Vagrant base box for CentOS 7</title>
+        <description>&lt;p&gt;Working on a proof of concept or evaluating open source projects requires setting up multiple environments, but I hate to install them on my Mac. I like to keep the environment very close to production which used stantads linux distributions like CentOS.  I also follow a practice maintain isolated environment for each project. This makes VirtualBox my best friend. I have many vbox images I keep few active ones on my machine and archive others on external drive.&lt;/p&gt;
+
+&lt;p&gt;Vagrant has been there for a while and recently started using it, it works great since you can automate the startup process and use command line to startup, shutdown and destroy vboxes.&lt;/p&gt;
+
+&lt;p&gt;Here is a Vagrant Box for CentOS 7 minimal for VirtualBox. It has virtual box guest additions installed. I also added a startup script that installs Java, Maven and Docker on vagrant up.&lt;/p&gt;
+
+&lt;p&gt;Vagrantfile: &lt;script src=&quot;https://gist.github.com/7d6d3fd494e0433c9df6.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Install Java Script: &lt;script src=&quot;https://gist.github.com/b1f5e283580f4adf84c7.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is the Git project to Vagrant Box: &lt;a href=&quot;https://github.com/kumrigar/vagrant-centos7-java-base&quot;&gt;https://github.com/kumrigar/vagrant-centos7-java-base&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are few links helped me create the base vagrant box:
+&lt;a href=&quot;http://thornelabs.net/2013/11/11/create-a-centos-6-vagrant-base-box-from-scratch-using-virtualbox.html&quot;&gt;http://thornelabs.net/2013/11/11/create-a-centos-6-vagrant-base-box-from-scratch-using-virtualbox.html&lt;/a&gt;
+&lt;a href=&quot;http://docs.vagrantup.com/v2/virtualbox/boxes.html&quot;&gt;http://docs.vagrantup.com/v2/virtualbox/boxes.html&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Apr 2015 17:32:00 -0700</pubDate>
+        <link>http://yodabyt.es/technology/2015/04/12/vagrant-centos7-base.html</link>
+        <guid isPermaLink="true">http://yodabyt.es/technology/2015/04/12/vagrant-centos7-base.html</guid>
+        
+        <category>vagrant,</category>
+        
+        <category>CentOS</category>
         
         
         <category>technology</category>
