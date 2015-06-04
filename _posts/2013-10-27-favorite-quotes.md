@@ -2,12 +2,9 @@
 layout: post
 title: Favorite quotes..
 date: '2013-10-27T16:32:00-08:00'
-tags:
-- batman
-- kung fu panda
-- matrix
-- star wars
-tumblr_url: http://iscribbled.it/post/16402995176/quotes-it-is
+categories: Fun
+tags: starwars, kung fu panda, matrix, batman
+comments: true
 ---
 ######Yoda:
 > Do. Or do not. There is no try.
