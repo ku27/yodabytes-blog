@@ -6,7 +6,7 @@ categories: Technology
 tags: vagrant, CentOS
 comments: true
 ---
-Working on a proof of concept or evaluating open source projects requires setting up multiple environments, but I hate to install them on my Mac. I like to keep the environment very close to production which used stantads linux distributions like CentOS.  I also follow a practice maintain isolated environment for each project. This makes VirtualBox my best friend. I have many vbox images I keep few active ones on my machine and archive others on external drive.
+Working on a proof of concept or evaluating open source projects requires setting up multiple environments, but I hate to install them on my Mac. I like to keep the environment very close to production which uses stantads linux distributions like CentOS.  I also follow a practice maintain isolated environment for each project. This makes VirtualBox my best friend. I have many vbox images I keep few active ones on my machine and archive others on external drive.
 
 Vagrant has been there for a while and recently started using it, it works great since you can automate the startup process and use command line to startup, shutdown and destroy vboxes.
 
