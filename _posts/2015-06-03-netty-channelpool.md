@@ -11,6 +11,8 @@ While trying to use the pool, I came across an issue where the Channel pipeline 
 
 Here is my initial implementation:
 {% gist 8046e804d8b58a65cf8e %}
+Output:
+<code>DefaultChannelPipeline{}</code>
 
 After many hours of debugging found out that it is meant to be like this bt design. Here is link to the issue on Github: https://github.com/netty/netty/issues/3770
 
@@ -18,3 +20,12 @@ Channel Pool provides an event listener called ChannelPoolHandler to capture poo
 
 Here is the code snippet for initializing Channel within the ChannelPoolHandler:
 {% gist 522e2556d2f119e26319 %}
+Output:
+<code>DefaultChannelPipeline{(ProtobufVarint32FrameDecoder#0 =
+    io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder),
+   (ProtobufDecoder#0 = io.netty.handler.codec.protobuf.ProtobufDecoder),
+   (ProtobufVarint32LengthFieldPrepender#0 =
+     io.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender),
+   (ProtobufEncoder#0 = io.netty.handler.codec.protobuf.ProtobufEncoder),
+   (LogClientHandler#0 = com.pubmatic.ripple.client.LogClientHandler)}
+</code>

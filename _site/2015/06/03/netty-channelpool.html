@@ -62,14 +62,25 @@
 <p>While trying to use the pool, I came across an issue where the Channel pipeline was not getting initialized with the ChannelInitilizer setup in the Bootstrap.</p>
 
 <p>Here is my initial implementation:
-<script src="https://gist.github.com/8046e804d8b58a65cf8e.js"> </script></p>
+<script src="https://gist.github.com/8046e804d8b58a65cf8e.js"> </script>
+Output:
+<code>DefaultChannelPipeline{}</code></p>
 
 <p>After many hours of debugging found out that it is meant to be like this bt design. Here is link to the issue on Github: <a href="https://github.com/netty/netty/issues/3770">https://github.com/netty/netty/issues/3770</a></p>
 
 <p>Channel Pool provides an event listener called ChannelPoolHandler to capture pool events. ChannelPoolHandler handler can be implemented to handle events such as channel creation, channel acquisition, channel release etc. Modified the above code to initialize the Channel pipeline on channel creation, which works fine.</p>
 
 <p>Here is the code snippet for initializing Channel within the ChannelPoolHandler:
-<script src="https://gist.github.com/522e2556d2f119e26319.js"> </script></p>
+<script src="https://gist.github.com/522e2556d2f119e26319.js"> </script>
+Output:
+<code>DefaultChannelPipeline{(ProtobufVarint32FrameDecoder#0 =
+    io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder),
+   (ProtobufDecoder#0 = io.netty.handler.codec.protobuf.ProtobufDecoder),
+   (ProtobufVarint32LengthFieldPrepender#0 =
+     io.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender),
+   (ProtobufEncoder#0 = io.netty.handler.codec.protobuf.ProtobufEncoder),
+   (LogClientHandler#0 = com.pubmatic.ripple.client.LogClientHandler)}
+</code></p>
 
       </section>
       

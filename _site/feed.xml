@@ -5,8 +5,8 @@
     <description>my few bytes on technology and life..</description>
     <link>http://yodabyt.es/</link>
     <atom:link href="http://yodabyt.es/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Jun 2015 18:28:00 -0700</pubDate>
-    <lastBuildDate>Wed, 03 Jun 2015 18:28:00 -0700</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2015 18:38:42 -0700</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2015 18:38:42 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -16,14 +16,25 @@
 &lt;p&gt;While trying to use the pool, I came across an issue where the Channel pipeline was not getting initialized with the ChannelInitilizer setup in the Bootstrap.&lt;/p&gt;
 
 &lt;p&gt;Here is my initial implementation:
-&lt;script src=&quot;https://gist.github.com/8046e804d8b58a65cf8e.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/8046e804d8b58a65cf8e.js&quot;&gt; &lt;/script&gt;
+Output:
+&lt;code&gt;DefaultChannelPipeline{}&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;After many hours of debugging found out that it is meant to be like this bt design. Here is link to the issue on Github: &lt;a href=&quot;https://github.com/netty/netty/issues/3770&quot;&gt;https://github.com/netty/netty/issues/3770&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Channel Pool provides an event listener called ChannelPoolHandler to capture pool events. ChannelPoolHandler handler can be implemented to handle events such as channel creation, channel acquisition, channel release etc. Modified the above code to initialize the Channel pipeline on channel creation, which works fine.&lt;/p&gt;
 
 &lt;p&gt;Here is the code snippet for initializing Channel within the ChannelPoolHandler:
-&lt;script src=&quot;https://gist.github.com/522e2556d2f119e26319.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/522e2556d2f119e26319.js&quot;&gt; &lt;/script&gt;
+Output:
+&lt;code&gt;DefaultChannelPipeline{(ProtobufVarint32FrameDecoder#0 =
+    io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder),
+   (ProtobufDecoder#0 = io.netty.handler.codec.protobuf.ProtobufDecoder),
+   (ProtobufVarint32LengthFieldPrepender#0 =
+     io.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender),
+   (ProtobufEncoder#0 = io.netty.handler.codec.protobuf.ProtobufEncoder),
+   (LogClientHandler#0 = com.pubmatic.ripple.client.LogClientHandler)}
+&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 03 Jun 2015 17:32:00 -0700</pubDate>
         <link>http://yodabyt.es/2015/06/03/netty-channelpool.html</link>
