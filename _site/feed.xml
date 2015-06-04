@@ -5,13 +5,13 @@
     <description>my few bytes on technology and life..</description>
     <link>http://yodabyt.es/</link>
     <atom:link href="http://yodabyt.es/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Jun 2015 18:24:50 -0700</pubDate>
-    <lastBuildDate>Wed, 03 Jun 2015 18:24:50 -0700</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2015 18:28:00 -0700</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2015 18:28:00 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Netty Channel Pool</title>
-        <description>&lt;p&gt;Netty released ChannelPools in their most version 4.0.28 release: &lt;a href=&quot;http://netty.io/news/2015/05/07/4-0-28-Final.html&quot;&gt;http://netty.io/news/2015/05/07/4-0-28-Final.html&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;Netty released ChannelPool in their most version 4.0.28 release: &lt;a href=&quot;http://netty.io/news/2015/05/07/4-0-28-Final.html&quot;&gt;http://netty.io/news/2015/05/07/4-0-28-Final.html&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;While trying to use the pool, I came across an issue where the Channel pipeline was not getting initialized with the ChannelInitilizer setup in the Bootstrap.&lt;/p&gt;
 
@@ -29,13 +29,7 @@
         <link>http://yodabyt.es/2015/06/03/netty-channelpool.html</link>
         <guid isPermaLink="true">http://yodabyt.es/2015/06/03/netty-channelpool.html</guid>
         
-        <category>batman</category>
-        
-        <category>kung fu panda</category>
-        
-        <category>matrix</category>
-        
-        <category>star wars</category>
+        <category>Netty</category>
         
         
       </item>
