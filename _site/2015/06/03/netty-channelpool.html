@@ -7,7 +7,7 @@
   <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Favorite quotes..</title>
+  <title>Netty Channel Pool</title>
   <meta name="description" content="my few bytes on technology and life.." />
 
   <meta name="HandheldFriendly" content="True" />
@@ -15,7 +15,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <link rel="canonical" href="http://yodabyt.es/2013/10/27/favorite-quotes.html">
+  <link rel="canonical" href="http://yodabyt.es/2015/06/03/netty-channelpool.html">
 
   <link rel="shortcut icon" href="/assets/images/favicon.ico">
 <!--  <link rel="stylesheet" href=""> -->
@@ -38,12 +38,12 @@
       
       <div class="noarticleimage">
         <div class="post-meta">
-          <h1 class="post-title">Favorite quotes..</h1>
+          <h1 class="post-title">Netty Channel Pool</h1>
           <div class="cf post-meta-text">
             <div class="author-image" style="background-image: url(/assets/images/author.jpg)">Blog Logo</div>
             <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
             on
-            <time datetime="2013-10-27T17:32:00-07:00">27 Oct 2013</time>
+            <time datetime="2015-06-03T17:32:00-07:00">03 Jun 2015</time>
 <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span>i -->
           </div>
         </div>
@@ -57,35 +57,19 @@
           <span class="post-reading-time"></span> read
         </div>
         <a name="topofpage"></a>
-        <h6 id="yoda:">Yoda:</h6>
+        <p>Netty released ChannelPools in their most version 4.0.28 release: <a href="http://netty.io/news/2015/05/07/4-0-28-Final.html">http://netty.io/news/2015/05/07/4-0-28-Final.html</a></p>
 
-<blockquote>
-<p>Do. Or do not. There is no try.</p>
-</blockquote>
+<p>While trying to use the pool, I came across an issue where the Channel pipeline was not getting initialized with the ChannelInitilizer setup in the Bootstrap.</p>
 
-<h6 id="po:">Po:</h6>
+<p>Here is my initial implementation:
+<script src="https://gist.github.com/8046e804d8b58a65cf8e.js"> </script></p>
 
-<blockquote>
-<p>There is no secret ingredient.</p>
-</blockquote>
+<p>After many hours of debugging found out that it is meant to be like this bt design. Here is link to the issue on Github: <a href="https://github.com/netty/netty/issues/3770">https://github.com/netty/netty/issues/3770</a></p>
 
-<h6 id="morpheus:">Morpheus:</h6>
+<p>Channel Pool provides an event listener called ChannelPoolHandler to capture pool events. ChannelPoolHandler handler can be implemented to handle events such as channel creation, channel acquisition, channel release etc. Modified the above code to initialize the Channel pipeline on channel creation, which works fine.</p>
 
-<blockquote>
-<p>Don’t think you are, know you are.</p>
-</blockquote>
-
-<h6 id="the-dark-knight:">The Dark Knight:</h6>
-
-<blockquote>
-<p>You either die a hero or live long enough to see yourself become the villain.</p>
-</blockquote>
-
-<h6 id="oogway:">Oogway:</h6>
-
-<blockquote>
-<p>One often meets his destiny on the road he took to avoid it.</p>
-</blockquote>
+<p>Here is the code snippet for initializing Channel within the ChannelPoolHandler:
+<script src="https://gist.github.com/522e2556d2f119e26319.js"> </script></p>
 
       </section>
       
@@ -93,7 +77,7 @@
         <section class="share">
           
           
-          <a class="icon-twitter" href="http://twitter.com/share?text=Favorite+quotes..&amp;url=http://yodabyt.es/2013/10/27/favorite-quotes"
+          <a class="icon-twitter" href="http://twitter.com/share?text=Netty+Channel+Pool&amp;url=http://yodabyt.es/2015/06/03/netty-channelpool"
           onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
           <i class="fa fa-twitter"></i><span class="hidden">twitter</span>
         </a>
@@ -111,7 +95,7 @@
           <h4>Kunal Umrigar</h4>
           <p class="bio"></p>
           <hr>
-          <p class="published">Published <time datetime="2013-10-27 17:32">27 Oct 2013</time></p>
+          <p class="published">Published <time datetime="2015-06-03 17:32">03 Jun 2015</time></p>
         </section>
       </div>
       

@@ -45,11 +45,11 @@ body
   font-family: $font-sans
   margin: 0
   padding: 0
-  text-rendering: optimizeLegibility
+  text-rendering: optimizeSpeed
   -webkit-font-smoothing: antialiased
   -moz-font-feature-settings: "liga=1, dlig=1"
   -ms-font-feature-settings: "liga", "dlig"
-  -webkit-font-feature-settings: "liga", "dlig"
+//  -webkit-font-feature-settings: "liga", "dlig"
   -o-font-feature-settings: "liga", "dlig"
   font-feature-settings: "liga", "dlig"
 
@@ -607,6 +607,7 @@ body
 
 pre,
 code
+  white-space: pre !important
   font-size: 15px
   border: 1px solid #e8e8e8
   border-radius: 3px
@@ -616,9 +617,16 @@ code
   padding: 1px 5px
 
 pre
+  white-space: pre !important
   padding: 8px 12px
   overflow-x: scroll
   > code
+    white-space: pre !important
+    border: 0
+    padding-right: 0
+    padding-left: 0
+  > line-pre
+    white-space: nowrap
     border: 0
     padding-right: 0
     padding-left: 0
