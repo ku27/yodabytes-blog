@@ -19,5 +19,6 @@ Install Java Script: {% gist  b1f5e283580f4adf84c7 %}
 Here is the Git project to Vagrant Box: https://github.com/kumrigar/vagrant-centos7-java-base
 
 Here are few links helped me create the base vagrant box:
-http://thornelabs.net/2013/11/11/create-a-centos-6-vagrant-base-box-from-scratch-using-virtualbox.html
-http://docs.vagrantup.com/v2/virtualbox/boxes.html
+
+ - http://thornelabs.net/2013/11/11/create-a-centos-6-vagrant-base-box-from-scratch-using-virtualbox.html
+ - http://docs.vagrantup.com/v2/virtualbox/boxes.html

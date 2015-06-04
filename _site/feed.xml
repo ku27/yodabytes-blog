@@ -5,8 +5,8 @@
     <description>my few bytes on technology and life..</description>
     <link>http://yodabyt.es/</link>
     <atom:link href="http://yodabyt.es/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 04 Jun 2015 14:52:46 -0700</pubDate>
-    <lastBuildDate>Thu, 04 Jun 2015 14:52:46 -0700</lastBuildDate>
+    <pubDate>Thu, 04 Jun 2015 14:57:26 -0700</pubDate>
+    <lastBuildDate>Thu, 04 Jun 2015 14:57:26 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -63,9 +63,12 @@ Output:
 
 &lt;p&gt;Here is the Git project to Vagrant Box: &lt;a href=&quot;https://github.com/kumrigar/vagrant-centos7-java-base&quot;&gt;https://github.com/kumrigar/vagrant-centos7-java-base&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Here are few links helped me create the base vagrant box:
-&lt;a href=&quot;http://thornelabs.net/2013/11/11/create-a-centos-6-vagrant-base-box-from-scratch-using-virtualbox.html&quot;&gt;http://thornelabs.net/2013/11/11/create-a-centos-6-vagrant-base-box-from-scratch-using-virtualbox.html&lt;/a&gt;
-&lt;a href=&quot;http://docs.vagrantup.com/v2/virtualbox/boxes.html&quot;&gt;http://docs.vagrantup.com/v2/virtualbox/boxes.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here are few links helped me create the base vagrant box:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://thornelabs.net/2013/11/11/create-a-centos-6-vagrant-base-box-from-scratch-using-virtualbox.html&quot;&gt;http://thornelabs.net/2013/11/11/create-a-centos-6-vagrant-base-box-from-scratch-using-virtualbox.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docs.vagrantup.com/v2/virtualbox/boxes.html&quot;&gt;http://docs.vagrantup.com/v2/virtualbox/boxes.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Sun, 12 Apr 2015 17:32:00 -0700</pubDate>
         <link>http://yodabyt.es/technology/2015/04/12/vagrant-centos7-base.html</link>
