@@ -5,26 +5,26 @@
     <description>my few bytes on technology and life..</description>
     <link>http://yodabyt.es/</link>
     <atom:link href="http://yodabyt.es/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 19 Jun 2015 15:49:58 -0700</pubDate>
-    <lastBuildDate>Fri, 19 Jun 2015 15:49:58 -0700</lastBuildDate>
+    <pubDate>Sun, 21 Jun 2015 00:35:15 -0700</pubDate>
+    <lastBuildDate>Sun, 21 Jun 2015 00:35:15 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Audrino - analog out to led</title>
-        <description>&lt;p&gt;I don&amp;#39;t think Audrino needs an introduction, its an amazing open source hardware technology. Have always wanted to work on it, so I finally bought an audrino board for $25 from Amazon and stater kit from eBay. Revived my rusty electronics concepts, its been a ling time since I worked on breadboards, resistors, 8085 &amp;amp; 8086 programming and it seems like its all coming back together.&lt;/p&gt;
+        <title>Arduino - analog out to led</title>
+        <description>&lt;p&gt;I don&amp;#39;t think Arduino needs an introduction, its an amazing open source hardware technology. Have always wanted to work on it, so I finally bought an arduino board for $25 from Amazon and stater kit from eBay. Revived my rusty electronics concepts, its been a ling time since I worked on breadboards, resistors, 8085 &amp;amp; 8086 programming and it seems like its all coming back together.&lt;/p&gt;
 
-&lt;p&gt;So here my first very simple program to fade in and fade out LED using analog output from Audrino. I used the setup from the FADE example on the audrino site.&lt;/p&gt;
+&lt;p&gt;So here my first very simple program to fade in and fade out LED using analog output from Arduino. I used the setup from the FADE example on the arduino site.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://www.arduino.cc/en/uploads/Tutorial/simplefade_bb.png&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;Here is my audrino skecth:
+&lt;p&gt;Here is my arduino skecth:
 &lt;script src=&quot;https://gist.github.com/9c092ed3999cb8cbe5e1.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 19 Jun 2015 17:32:00 -0700</pubDate>
         <link>http://yodabyt.es/technology/2015/06/19/basic-audrino-analog-test.html</link>
         <guid isPermaLink="true">http://yodabyt.es/technology/2015/06/19/basic-audrino-analog-test.html</guid>
         
-        <category>Audrino</category>
+        <category>Arduino</category>
         
         <category>analog</category>
         
