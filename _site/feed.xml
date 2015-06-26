@@ -5,8 +5,8 @@
     <description>my few bytes on technology and life..</description>
     <link>http://yodabyt.es/</link>
     <atom:link href="http://yodabyt.es/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 26 Jun 2015 14:45:10 -0700</pubDate>
-    <lastBuildDate>Fri, 26 Jun 2015 14:45:10 -0700</lastBuildDate>
+    <pubDate>Fri, 26 Jun 2015 14:48:12 -0700</pubDate>
+    <lastBuildDate>Fri, 26 Jun 2015 14:48:12 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -16,7 +16,7 @@
 &lt;p&gt;Components used:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Bluetooth Transreceiver (From Amazon at $9.99 &lt;a href=&quot;http://www.amazon.com/gp/product/B0093XAV4U?psc=1&amp;redirect=true&amp;ref_=oh_aui_detailpage_o00_s00&quot;&gt;KEDSUM® Arduino Wireless Bluetooth Transceiver&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bluetooth Transreceiver (From Amazon at $9.99 &lt;a href=&quot;http://www.amazon.com/gp/product/B0093XAV4U?psc=1&amp;redirect=true&amp;ref_=oh_aui_detailpage_o00_s00&quot; target=&quot;_blank&quot;&gt; KEDSUM® Arduino Wireless Bluetooth Transceiver&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Led&lt;/li&gt;
 &lt;li&gt;Breadboard and connectors&lt;/li&gt;
 &lt;/ul&gt;
