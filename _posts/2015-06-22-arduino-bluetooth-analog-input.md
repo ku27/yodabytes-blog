@@ -11,7 +11,7 @@ Here is my new experiment with Arduino, controlling LED brightness with Bluetoot
 
 Components used:
 
-   - Bluetooth Transreceiver (From Amazon at $9.99 <a href="http://www.amazon.com/gp/product/B0093XAV4U?psc=1&redirect=true&ref_=oh_aui_detailpage_o00_s00" target="_blank"> KEDSUM® Arduino Wireless Bluetooth Transceiver</a>)
+   - Bluetooth Transreceiver (From Amazon at $9.99 <a href="http://www.amazon.com/gp/product/B0093XAV4U?psc=1&redirect=true&ref_=oh_aui_detailpage_o00_s00" target="_blank" > KEDSUM® Arduino Wireless Bluetooth Transceiver</a>)
    - Led
    - Breadboard and connectors
 
