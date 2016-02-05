@@ -2,7 +2,7 @@
 
 
 
-angular.module('devHarness', [])
+angular.module('detectAd', [])
     .value('config', {
         adHostList: {
             "showads.pubmatic.com": true,
@@ -11,7 +11,7 @@ angular.module('devHarness', [])
         
 
     })
-    .controller('controller', ['$scope','$location', 'config', function($scope, $location, config) {
+    .controller('mainCtrl', ['$scope','$location', 'config', function($scope, $location, config) {
         
         function buildAdList(){
             angular.forEach(iframeList, function(each){
@@ -103,8 +103,6 @@ angular.module('devHarness', [])
             var userLang = navigator.language || navigator.userLanguage; 
             requestObject.language = userLang;
             requestObject.browserName = getBrowserName();
-            requestObject.adBlockFlag = 0;
-
         }
 
 
@@ -117,6 +115,9 @@ angular.module('devHarness', [])
         buildMainValue();
 
   
+        requestObject.adBlockFlag = (requestObject.adList.length === 0 )? 1 :0;
+
+
         console.log(requestObject);
 
 
