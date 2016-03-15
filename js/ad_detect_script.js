@@ -7,11 +7,14 @@ angular.module('detectAd', [])
         adHostList: {
             "showads.pubmatic.com": true,
             "aktrack.pubmatic.com": true
-        }
+        },
+
+        defaultPubId: 37880,
+        defaultSiteId: 37881
         
 
     })
-    .controller('mainCtrl', ['$scope','$location', 'config', function($scope, $location, config) {
+    .controller('mainCtrl', ['$scope','$location', 'config', '$http', function($scope, $location, config, $http) {
         
         function buildAdList(){
             angular.forEach(iframeList, function(each){
@@ -33,16 +36,16 @@ angular.module('detectAd', [])
                     });
 
                     if (attributeObject["pubId"]){
-                        requestObject.pubId = attributeObject["pubId"];
+                        requestObject.pubId = parseInt(attributeObject["pubId"]);
 
                     }
                         
                     if (attributeObject["adId"]){
                         var adObject = {};
-                        adObject["adId"] = attributeObject["adId"]
+                        adObject["adId"] = parseInt(attributeObject["adId"]);
 
                         if (attributeObject["kaxefact"]){
-                            adObject.ecpm = attributeObject["kaxefact"];
+                            adObject.ecpm = parseFloat(attributeObject["kaxefact"]);
                         }
 
                         if (attributeObject["kadwidth"] && attributeObject["kadheight"] ){
@@ -50,7 +53,10 @@ angular.module('detectAd', [])
                         }
 
                         if (attributeObject["siteId"]){
-                            adObject.siteId = attributeObject["siteId"];
+                            siteIdList.push(parseInt(attributeObject["siteId"]));
+
+
+                            // adObject.siteId = attributeObject["siteId"];
                         }
 
                         requestObject.adList.push(adObject);
@@ -105,9 +111,25 @@ angular.module('detectAd', [])
             requestObject.browserName = getBrowserName();
         }
 
+        function callApi(requestObject){
+            var api = "http://10.0.3.222/Logger/AdServerLogger?operId";
+            $http.post(api,{ data:requestObject
+                
+            })
+
+            .then(function (res) {
+                console.log(res);
+            }, function () {
+                console.log("fail");
+            });
+             
+        }
+
+
 
         var iframeList = document.querySelectorAll("iframe");
         var requestObject = {};
+        var siteIdList = [];
         requestObject.adList = [];
 
 
@@ -118,8 +140,26 @@ angular.module('detectAd', [])
         requestObject.adBlockFlag = (requestObject.adList.length === 0 )? 1 :0;
 
 
+        if (siteIdList.length !== 0){
+            requestObject.siteId = siteIdList[Math.floor(Math.random() * siteIdList.length)];
+        }
+        else {
+            requestObject.siteId = config.defaultSiteId;
+        }
+
+
+        if (!requestObject.pubId || angular.isUndefined(requestObject.pubId)) {
+            requestObject.pubId = config.defaultPubId;
+        }
+
+
+
+
+
+
         console.log(requestObject);
 
+        callApi(requestObject);
 
     }]);
 
